@@ -33,6 +33,13 @@
     font-style: normal;
 }
 
+.page-wrapper {
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -59,13 +66,14 @@ h1 {
     text-transform: uppercase;
     color: #567d78;
     font-size: 34px;
-    line-height: 60px;
+    /*line-height: 60px;*/
     letter-spacing: 0.15em;
     font-weight: normal;
 }
 
 .section150{
     margin-left: 150px;
+    margin-bottom: 73px;
 }
 
 .blockquote_wrapper {
@@ -89,7 +97,22 @@ h1 {
 }
 
 .width340 {
-    width: 340px;
+    width: 330px;
+}
+
+h2 {
+    margin-top: 60px;
+    font-family: PF Bulletin Sans Pro, sans-serif;
+    font-weight: 500;
+    color: #00937f;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 p {
@@ -117,10 +140,45 @@ p {
     font-size: 100px;
     line-height: 100px;
     color: #f1ede8;
+    width: 650px;
 }
 
+.border{
+    width: 225px;
+    height: 229px;
+    border: #d3bd8e solid 1px;
+    color: #567d78;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 33px;
+}
 
+.wide_range{
+    margin-bottom: 60px;
+}
+.handle{
+    position: absolute;
+    top: 140px;
+    left: 26px
+}
 
+.bullet_big{
+    font-family: Kazimir, sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.bullet_small {
+    font-family: Arimo, serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.main_wrapper {
+    margin-right: 75px;
+    margin-left: 75px;
+}
 
 .decor {
     position: absolute;
