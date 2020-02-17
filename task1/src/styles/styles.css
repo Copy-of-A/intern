@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'PF Bulletin Sans Pro';
+    src: local('PFBulletinSansPro-Regular'),
+    url('../fonts/PFBulletinSansPro-Regular.woff2') format('woff2'),
+    url('../fonts/PFBulletinSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Bulletin Sans Pro';
+    src: local('PFBulletinSansPro-Medium'),
+    url('../fonts/PFBulletinSansPro-Medium.woff2') format('woff2'),
+    url('../fonts/PFBulletinSansPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    /*src: local('Arimo Regular'), local('Arimo-Regular'),*/
+    url('../fonts/Arimo-Regular.woff2') format('woff2'),
+    url('../fonts/Arimo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kazimir';
+    src: url('../fonts/Kazimir-Regular.woff2') format('woff2'),
+    url('../fonts/Kazimir-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    margin-top: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 94px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+}
+
+h1 {
+    margin: 0;
+    font-family: Kazimir, serif;
+    text-transform: uppercase;
+    color: #567d78;
+    font-size: 34px;
+    line-height: 60px;
+    letter-spacing: 0.15em;
+    font-weight: normal;
+}
+
+.section150{
+    margin-left: 150px;
+}
+
+.blockquote_wrapper {
+    border-bottom: #c0a160 solid 1px;
+    border-top: #c0a160 solid 1px;
+    padding: 39px 0 33px 23px;
+    width: 130px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
+.blockquote {
+    font-family: Kazimir, serif;
+    line-height: 40px;
+    color: #c0a160;
+    font-size: 26px;
+    margin: 0;
+    width: 430px;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+}
+
+.width340 {
+    width: 340px;
+}
+
+p {
+    font-size: 14px;
+    font-family: Arimo, serif;
+    line-height: 22px;
+}
+
+.side {
+    position: absolute;
+    top: 384px;
+    left: 34px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    font-family: PF Bulletin Sans Pro, sans-serif;
+    font-weight: 400;
+    color: #c1a15e;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.big{
+    font-family: Kazimir, serif;
+    font-size: 100px;
+    line-height: 100px;
+    color: #f1ede8;
+}
+
+
+
+
+.decor {
+    position: absolute;
+    top: 61px;
+    right: 63px;
+}
+.door {
+    position: absolute;
+    top: 248px;
+    right: 304px;
+    z-index: 5;
+}
