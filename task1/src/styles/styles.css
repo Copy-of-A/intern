@@ -50,7 +50,7 @@ section, summary, time, mark, audio, video {
 
 .page-wrapper {
     /*max-width: 1200px;*/
-    /*position: relative;*/
+    position: relative;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
 }
@@ -73,9 +73,7 @@ nav {
 
 .wrapper {
     position: relative;
-    width: 1300px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    margin: 0 0;
 }
 
 .logo {
@@ -93,9 +91,31 @@ h1 {
     font-weight: normal;
 }
 
-.section150{
-    margin-left: 150px;
+.section {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-about{
+    margin-left: 173px;
     margin-bottom: 125px;
+}
+
+.block-guarantee {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block-15 {
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 33px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .handle {
@@ -140,15 +160,13 @@ h2 {
     margin-bottom: 95px;
 }
 
-.flex {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .number5 {
     position: absolute;
     top: -100px;
-    left: 350px;
+    /*left: 350px;*/
+    right: 727px;
+    margin-right: 140px;
 }
 
 p {
@@ -219,6 +237,7 @@ p {
 }
 
 .guarantee{
+    width: 350px;
     margin-bottom: 123px;
 }
 .handle{
@@ -226,7 +245,8 @@ p {
     top: 28px;
 }
 
-.between {
+.flex-between {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -257,20 +277,22 @@ p {
     color: #567d78;
 }
 
-.main_wrapper {
-    margin-right: 75px;
-    margin-left: 75px;
-    margin-bottom: 33px;
-}
 
 .decor {
     position: absolute;
-    top: 61px;
-    right: 63px;
+    /*top: 61px;*/
+    top: -116px;
+    /*right: 63px;*/
+    left: 627px;
+
 }
 .door {
     position: absolute;
-    top: 248px;
-    right: 304px;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*top: 248px;*/
+    top: 71px;
+    /*right: 304px;*/
+    left: 480px;
     z-index: 5;
 }
