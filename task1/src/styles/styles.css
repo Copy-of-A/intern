@@ -81,14 +81,22 @@ nav {
 }
 
 h1 {
-    margin: 0;
     font-family: Kazimir, serif;
-    text-transform: uppercase;
+
     color: #567d78;
     font-size: 34px;
     /*line-height: 60px;*/
     letter-spacing: 0.15em;
     font-weight: normal;
+    margin: 0 0 52px;
+}
+
+.block-about h1{
+    text-transform: uppercase;
+}
+
+.block-slider h1{
+  margin-left: 75px;
 }
 
 .section {
@@ -105,6 +113,7 @@ h1 {
 .block-guarantee {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .block-15 {
@@ -142,9 +151,7 @@ h1 {
     font-weight: normal;
 }
 
-.width340 {
-    width: 330px;
-}
+
 
 h2 {
     margin-top: 60px;
@@ -163,7 +170,7 @@ h2 {
 
 .number5 {
     position: absolute;
-    top: -100px;
+    top: -50px;
     /*left: 350px;*/
     right: 727px;
     margin-right: 140px;
@@ -220,15 +227,32 @@ p {
     width: 650px;
 }
 
-.border{
+.block-15 .border{
     width: 195px;
     height: 196px;
+    padding-top: 33px;
+}
+
+.dealer {
+    display: flex;
+    margin-bottom: 135px;
+}
+
+.dealer .border {
+    width: 160px;
+    height: 200px;
+    margin-right: 225px;
+    justify-content: flex-end;
+    padding-bottom: 27px;
+    margin-top: -80px;
+}
+
+.border{
     border: #d3bd8e solid 1px;
     color: #567d78;
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-    padding-top: 33px;
 }
 
 .wide_range{
@@ -250,12 +274,25 @@ p {
     justify-content: space-between;
 }
 
-.center {
+.flex-center {
+    display: flex;
     justify-content: center;
 }
 
 .width100 {
     width: 100%;
+}
+
+.width330 {
+    width: 330px;
+}
+
+.width500 {
+    width: 500px;
+}
+
+.top75 {
+    margin-top: 75px;
 }
 
 .flex_column {
@@ -276,7 +313,6 @@ p {
     line-height: 22px;
     color: #567d78;
 }
-
 
 .decor {
     position: absolute;
