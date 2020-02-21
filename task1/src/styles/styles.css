@@ -48,11 +48,8 @@ section, summary, time, mark, audio, video {
     font-style: normal;
 }
 
-.page-wrapper {
-    /*max-width: 1200px;*/
+.relative-wrapper {
     position: relative;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
 }
 
 nav {
@@ -72,8 +69,9 @@ nav {
 }
 
 .wrapper {
-    position: relative;
-    margin: 0 0;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo {
@@ -82,27 +80,21 @@ nav {
 
 h1 {
     font-family: Kazimir, serif;
-
     color: #567d78;
     font-size: 34px;
     /*line-height: 60px;*/
-    letter-spacing: 0.15em;
-    font-weight: normal;
     margin: 0 0 52px;
 }
 
 .block-about h1{
     text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: normal;
 }
 
 .block-slider h1{
-  margin-left: 75px;
-}
-
-.section {
-    width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 75px;
+    letter-spacing: 0.1em;
 }
 
 .block-about{
@@ -235,7 +227,25 @@ p {
 
 .dealer {
     display: flex;
-    margin-bottom: 135px;
+    margin-bottom: 220px;
+}
+
+.dealer a {
+    bottom: 0;
+    position: absolute;
+    left: 32px;
+}
+
+.link {
+    font-family: PF Bulletin Sans Pro, sans-serif;
+    font-size: 12px;
+    color: #789793;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.link-underline {
+    text-decoration: #decfbe underline;
 }
 
 .dealer .border {
@@ -332,3 +342,79 @@ p {
     left: 480px;
     z-index: 5;
 }
+
+.trading-house {
+    position: relative;
+}
+
+.slider-wrapper {
+    width: 600px;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arimo, serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6d7977;
+}
+
+.image {
+    width: 180px;
+    height: 180px;
+}
+
+.navigation {
+    /*position: relative;*/
+    width: 100%;
+}
+
+.next-button {
+    border-radius: 50%;
+}
+
+.striped-bg {
+    position: absolute;
+    left: 360px;
+    bottom: 62px;
+    z-index: -10;
+}
+
+.trading-house-up {
+    position: absolute;
+    right:0;
+    top: -93px;
+}
+
+.trading-house-bottom {
+    position: absolute;
+    right:0;
+    top: 120px;
+}
+
+.footer {
+    color: #789793;
+    font-family: Arimo, serif;
+    font-size: 12px;
+    line-height: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.red-collar {
+    font-family: PF Bulletin Sans Pro, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+

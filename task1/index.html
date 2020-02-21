@@ -33,21 +33,21 @@
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="page-wrapper">
+<div class="relative-wrapper">
     <header class="header">
-        <div class="wrapper">
+        <div class="relative-wrapper">
             <img class="logo" src="src/images/logo.png">
             <nav><img src="src/images/burger.png"></nav>
         </div>
     </header>
 
     <main>
-        <section class="wrapper">
+        <section class="relative-wrapper">
             <span class="side">о компании</span>
         </section>
 
-        <section class="section">
-            <div class="wrapper block-about">
+        <section class="wrapper">
+            <div class="relative-wrapper block-about">
                 <h1>о компании</h1>
                 <div class="blockquote_wrapper"><p class="blockquote">Более 15 лет мы занимаемся любимым делом, и с любовью представляем вам двери
                     Випорте — двери как искусство!</p></div>
@@ -71,14 +71,14 @@
                     <div class="border">
                         <span class="bullet_big">15 лет</span>
                         <span class="bullet_small">отменной репутации</span>
-                        <div class="wrapper">
+                        <div class="relative-wrapper">
                             <img class="handle" src="src/images/handle.png">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="wrapper block-guarantee">
+            <div class="relative-wrapper block-guarantee">
                 <div><img class="number5" src="src/images/5.png"></div>
                 <div class="size500">
                     <h2>гарантия</h2>
@@ -106,12 +106,16 @@
             <img class="width100" src="src/images/dveri-viporte-krasnodar.png">
         </section>
 
-        <section class="section">
-            <div class="wrapper dealer">
-                <div class="border">
-                    <span class="bullet_big">100</span>
-                    <span class="bullet_small">дилеров по России</span>
+        <section class="wrapper">
+            <div class="relative-wrapper dealer">
+                <div>
+                    <div class="border">
+                        <span class="bullet_big">100</span>
+                        <span class="bullet_small">дилеров по России</span>
+                    </div>
+                    <a class="link link-underline">адреса салонов</a>
                 </div>
+
                 <p class="width500 top75">С 2001 года мы доставляем и устанавливаем двери нашим клиентам. Установка дверей доверяется только
                     квалифицированным специалистам, которые обеспечены самым лучшим оборудованием и имеют многолетний
                     опыт работы с нашей продукцией. Доставка в регионы осуществляется по выстроенным логистическим каналам.
@@ -119,34 +123,51 @@
             </div>
 
             <div class="trading-house">
+                <img class="striped-bg" src="src/images/Rectangle_lined.png">
+                <img class="trading-house-up" src="src/images/dveri-viporte-maykop.png">
+                <img class="trading-house-bottom" src="src/images/viporte-dveri-krasnodar.png">
                 <div class="block-slider">
                     <h1>Торговый дом</h1>
                     <div class="slider-wrapper">
                         <div class="slider">
                             <div class="slide">
-                                <img src="" alt="">
+                                <img class="image" src="src/images/andrew.png" alt="">
+                                <span>Андрей Киселев</span>
+                                <span>Директор</span>
                             </div>
                             <div class="slide">
-                                <img src="" alt="">
+                                <img class="image" src="src/images/vladislav.png" alt="">
+                                <span>Владислав Селедцов</span>
+                                <span>Заместитель директора</span>
                             </div>
                             <div class="slide">
-                                <img src="" alt="">
+                                <img class="image" src="src/images/alexey.png" alt="">
+                                <span>Алексей Мусиенко</span>
+                                <span>Руководитель дилерского отдела</span>
                             </div>
                         </div>
                     </div>
+                    <div class="next-button"></div>
                 </div>
+
             </div>
 
         </section>
     </main>
 
-    <footer>
-        <div class="section flex-between">
-            <p>© Випорте, 2009–2017. г. Краснодар</p>
-            <a>support@viporte.ru</a>
+    <section class="navigation">
+        <img src="src/images/nav.png" style="width: 100%">
+<!--        <a><div><span class="left">каталог</span></div></a>-->
+<!--        <a><div><span class="right">галерея</span></div></a>-->
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper flex-between">
+            <p>© Випорте, 2009–2016. г. Краснодар</p>
+            <a class="link-underline">support@viporte.ru</a>
             <div class="red-collar">
-<!--                <img src="src/images/icon_logo.svg" alt="">-->
-                <p>сделано в <a>red collar</a></p>
+                <img src="src/images/icon_logo.svg" alt="">
+                <span>сделано в <a class="link-underline">red collar</a></span>
             </div>
         </div>
     </footer>
