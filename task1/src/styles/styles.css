@@ -192,6 +192,8 @@ p {
 
 a:hover {
     cursor: pointer;
+    text-decoration: none;
+    color: #decfbe;
 }
 
 .side {
@@ -502,6 +504,21 @@ a.right::after {
     box-sizing: border-box;
     transform: rotate(45deg);
 }
+
+.next-button:hover::before {
+    animation: next 0.4s ease;
+}
+
+@keyframes next {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
 
 .next-button::after {
     content: "";
