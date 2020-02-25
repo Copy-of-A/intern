@@ -4,9 +4,6 @@
     <list default="true" id="22138d5e-3f46-470f-a832-30f01a5ddc04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Алексей_Мусиенко.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/alexey.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Андрей_Киселев.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/andrew.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Владислав Селедцов.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/vladislav.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/fontsArimo-Bold.woff Arimo-Bold.woff2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,7 +42,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fontsArimo-Bold.woff Arimo-Bold.woff2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fonts" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -67,7 +68,8 @@
       <workItem from="1582020747189" duration="8260000" />
       <workItem from="1582195567512" duration="5471000" />
       <workItem from="1582207595870" duration="5550000" />
-      <workItem from="1582268685629" duration="9328000" />
+      <workItem from="1582268685629" duration="9487000" />
+      <workItem from="1582621867583" duration="19009000" />
     </task>
     <servers />
   </component>
@@ -75,13 +77,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="193" key="#Notifications" timestamp="1582626025438">
+      <screen x="0" y="23" width="1920" height="1053" />
+    </state>
+    <state x="533" y="193" key="#Notifications/0.23.1920.1053@0.23.1920.1053" timestamp="1582626025438" />
     <state x="659" y="351" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581943454060">
       <screen x="0" y="23" width="1920" height="1053" />
     </state>
     <state x="659" y="351" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1053@0.23.1920.1053" timestamp="1581943454060" />
-    <state x="633" y="278" width="670" height="676" key="search.everywhere.popup" timestamp="1581956071222">
+    <state x="633" y="278" width="670" height="676" key="search.everywhere.popup" timestamp="1582629672980">
       <screen x="0" y="23" width="1920" height="1053" />
     </state>
-    <state x="633" y="278" width="670" height="676" key="search.everywhere.popup/0.23.1920.1053@0.23.1920.1053" timestamp="1581956071222" />
+    <state x="633" y="278" width="670" height="676" key="search.everywhere.popup/0.23.1920.1053@0.23.1920.1053" timestamp="1582629672980" />
   </component>
 </project>
