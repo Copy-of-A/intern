@@ -128,9 +128,6 @@ h1 {
     margin-right: 75px;
     margin-left: 75px;
     margin-bottom: 33px;
-}
-
-.flex-end {
     display: flex;
     justify-content: flex-end;
 }
@@ -220,7 +217,7 @@ a:hover {
     right: 110px;
 }
 
-.big{
+.big {
     font-family: Kazimir, serif;
     font-size: 100px;
     line-height: 100px;
@@ -228,7 +225,7 @@ a:hover {
     width: 650px;
 }
 
-.block-15 .border{
+.block-15 .border {
     width: 195px;
     height: 196px;
     padding-top: 33px;
@@ -266,7 +263,7 @@ a:hover {
     margin-top: -80px;
 }
 
-.border{
+.border {
     border: #d3bd8e solid 1px;
     color: #567d78;
     display: flex;
@@ -274,16 +271,16 @@ a:hover {
     padding-left: 30px;
 }
 
-.wide_range{
+.wide_range {
     margin-bottom: 60px;
     width: 350px;
 }
 
-.guarantee{
+.guarantee {
     width: 350px;
     margin-bottom: 123px;
 }
-.handle{
+.handle {
     position: absolute;
     top: 28px;
 }
@@ -336,10 +333,9 @@ a:hover {
 .decor {
     position: absolute;
     top: -116px;
-    /*left: 627px;*/
     left: 800px;
-
 }
+
 .door {
     position: absolute;
     top: 71px;
@@ -592,4 +588,118 @@ a.right::after {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+@media (max-width: 1200px) {
+    .side {
+        display: none;
+    }
+
+    .wrapper1050, .wrapper {
+        width: inherit;
+    }
+
+    .wrapper1050{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .block-about {
+        padding: 0;
+        display: flex;
+    }
+
+    .decor {
+        top: -116px;
+        left: 662px;
+    }
+
+    .door {
+        top: 71px;
+        left: 515px;
+    }
+
+    .block-15 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big {
+        font-size: 85px;
+    }
+
+    .flex-between {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .guarantee {
+        margin-bottom: 97px;
+    }
+
+    .block-guarantee {
+        justify-content: flex-end;
+    }
+
+    .number5 {
+        top: 50px;
+        left: 200px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .door {
+        top: 620px;
+        left: 172px;
+    }
+
+    .decor {
+        top: 433px;
+        left: 319px;
+    }
+
+    .blockquote_wrapper {
+        margin-top: 59px;
+    }
+
+    .block-about {
+        margin-bottom: 640px;
+    }
+
+    .size500 {
+        width: inherit;
+    }
+
+    .number5 {
+        left: 100px;
+    }
+
+    .dealer .border {
+        margin-right: 104px;
+    }
+    .dealer a {
+        /*bottom: 0;*/
+        top: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .number5 {
+        left: 40px;
+    }
+    .guarantee {
+        width: 260px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+      .number5 {
+          width: 42%;
+      }
+}
+
+@media (max-width: 640px) and (min-width: 320px) {
+
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22138d5e-3f46-470f-a832-30f01a5ddc04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,8 @@
       <workItem from="1582195567512" duration="5471000" />
       <workItem from="1582207595870" duration="5550000" />
       <workItem from="1582268685629" duration="9487000" />
-      <workItem from="1582621867583" duration="21108000" />
+      <workItem from="1582621867583" duration="21732000" />
+      <workItem from="1582710317150" duration="7765000" />
     </task>
     <servers />
   </component>
@@ -84,6 +86,10 @@
       <screen x="0" y="23" width="1920" height="1053" />
     </state>
     <state x="659" y="351" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1053@0.23.1920.1053" timestamp="1581943454060" />
+    <state x="671" y="281" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582713423379">
+      <screen x="0" y="23" width="1920" height="1053" />
+    </state>
+    <state x="671" y="281" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1053@0.23.1920.1053" timestamp="1582713423379" />
     <state x="633" y="278" width="670" height="676" key="search.everywhere.popup" timestamp="1582629672980">
       <screen x="0" y="23" width="1920" height="1053" />
     </state>
