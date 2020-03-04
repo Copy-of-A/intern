@@ -355,8 +355,6 @@ a:hover {
 
 .slider-wrapper {
     display: flex;
-    width: 670px;
-    justify-content: space-between;
 }
 
 .slider {
@@ -378,12 +376,15 @@ a:hover {
 .slide{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: Arimo, serif;
     font-size: 12px;
     line-height: 20px;
     color: #6d7977;
+    text-align: center;
+    flex-wrap: wrap;
+    width: min-content;
 }
 
 .image {
@@ -470,6 +471,7 @@ a.right::after {
     bottom: 0;
     background: white;
     cursor: pointer;
+    margin-left: 15px;
 }
 
 .navigation-wrapper{
@@ -580,6 +582,15 @@ a.right::after {
     line-height: 30px;
     height: 60px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 75px;
+}
+
+.footer-piece {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -588,6 +599,10 @@ a.right::after {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+.striped-bg_640 {
+    display: none;
 }
 
 @media (max-width: 1200px) {
@@ -645,7 +660,39 @@ a.right::after {
         top: 50px;
         left: 200px;
     }
+    .block-slider h1 {
+        margin-left: 0;
+    }
+    .footer {
+        padding: 0 40px;
+    }
+    .footer-piece p {
+        font-size: 12px;
+    }
+}
 
+@media (max-width: 1110px) {
+    .trading-house-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 39px;
+    }
+
+    .trading-house-up, .trading-house-bottom {
+        position: static;
+    }
+
+    .striped-bg_640 {
+        display: block;
+        position: absolute;
+        top: 430px;
+        z-index: -5;
+    }
+
+    .navigation {
+        margin-top: 145px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -678,9 +725,12 @@ a.right::after {
     .dealer .border {
         margin-right: 104px;
     }
+
     .dealer a {
-        /*bottom: 0;*/
         top: 200px;
+    }
+    .content {
+        margin-left: 100px;
     }
 }
 
@@ -692,12 +742,61 @@ a.right::after {
         width: 260px;
         margin-right: 40px;
     }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+    .slider {
+        width: 500px;
+    }
+    .striped-bg {
+        left: 260px;
+        top: 0;
+        height: 210px;
+    }
+    .trading-house-up, .trading-house-bottom {
+        width: 48%;
+    }
+
+    .production {
+        font-size: 86px;
+    }
+
+    .leader-plus  .slider-wrapper {
+        width: 314px;
+    }
+
+    .leader-plus .slider {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 135px;
+    }
+    .leader-plus .slide {
+        margin-bottom: 39px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .dealer {
+        margin-bottom: 110px;
+    }
+
+    .leader-plus {
+        margin-bottom: 80px;
+    }
 }
 
 @media (max-width: 700px) {
       .number5 {
           width: 42%;
       }
+    .decor, .door {
+        /*width: 43%;*/
+    }
 }
 
 @media (max-width: 640px) and (min-width: 320px) {
