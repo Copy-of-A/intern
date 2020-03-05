@@ -94,6 +94,89 @@ nav img {
     position: absolute;
 }
 
+.burger {
+    border: #ebe8e4 1px solid;
+    border-radius: 45px;
+    width: 66px;
+    height: 66px;
+    background: transparent;
+    position: relative;
+}
+
+.burger::after {
+    content: '';
+    display: block;
+    background: transparent;
+    border: 1px solid #ebe8e4;
+    width: 48px;
+    height: 48px;
+    top: 9px;
+    left: 9px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 45px;
+}
+
+.burger-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+}
+
+.burger-inner::before {
+    content: '';
+    display: block;
+    background: transparent;
+    border: 1px solid #ebe8e4;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+}
+
+.burger-inner::after {
+    content: '';
+    display: block;
+    background: transparent;
+    border: 1px solid #ebe8e4;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.burger-inner > span {
+    display: block;
+    background-color: #ba8e48;
+    position: absolute;
+    width: 26px;
+    height: 2px;
+}
+
+.burger-inner > span:nth-child(1) {
+    margin-top: -9px;
+}
+.burger-inner > span:nth-child(3) {
+    margin-top: 9px;
+}
+
+.burger-inner > span::before, .burger-inner > span::after {
+    content: "";
+    width: 1px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: -1px;
+    background: #ba8e48;
+}
+
+.burger-inner > span::after {
+    right: 0;
+}
+
 h1 {
     font-family: Kazimir, serif;
     color: #567d78;
