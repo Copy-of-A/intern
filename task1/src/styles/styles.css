@@ -73,10 +73,6 @@ nav img {
     cursor: pointer;
 }
 
-.size500 {
-    width: 500px;
-}
-
 .header {
     margin-top: 14px;
     padding-left: 16px;
@@ -85,9 +81,21 @@ nav img {
 }
 
 .wrapper {
-    width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.wrapper_2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 640px) {
+    .wrapper_2 {
+        width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .logo {
@@ -228,22 +236,18 @@ h1 {
 }
 
 .block-about{
-    padding-left: 173px;
+    /*padding-left: 173px;*/
     margin-bottom: 125px;
 }
 
 .block-guarantee {
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 100px;
 }
 
 .block-15 {
-    margin-right: 75px;
-    margin-left: 75px;
-    margin-bottom: 33px;
+    margin-bottom: 93px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .handle {
@@ -270,8 +274,6 @@ h1 {
     font-weight: normal;
 }
 
-
-
 h2 {
     margin-top: 60px;
     font-family: PF Bulletin Sans Pro, sans-serif;
@@ -290,9 +292,7 @@ h2 {
 
 .number5 {
     position: absolute;
-    top: -50px;
-    /*left: 350px;*/
-    right: 727px;
+    top: -130px;
     margin-right: 140px;
 }
 
@@ -337,7 +337,7 @@ a:hover {
     font-size: 100px;
     line-height: 100px;
     color: #f1ede8;
-    width: 650px;
+    width: 600px;
 }
 
 .block-15 .border {
@@ -388,7 +388,6 @@ a:hover {
 
 .wide_range {
     margin-bottom: 60px;
-    width: 350px;
 }
 
 .guarantee {
@@ -414,13 +413,30 @@ a:hover {
     width: 100%;
 }
 
-.width330 {
-    width: 330px;
+
+@media (min-width: 1320px) {
+    .width500 {
+        width: 500px;
+    }
+
 }
 
-.width500 {
-    width: 500px;
+@media (min-width: 640px) {
+    .block-guarantee .width500 {
+        margin-left: 500px;
+    }
+
+    .wide_range {
+        width: 335px;
+    }
 }
+
+@media (min-width: 400px) {
+    .width330 {
+        width: 330px;
+    }
+}
+
 
 .top75 {
     margin-top: 75px;
@@ -456,12 +472,6 @@ a:hover {
     top: 71px;
     left: 653px;
     z-index: 5;
-}
-
-.wrapper1050 {
-    width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .trading-house {
@@ -725,18 +735,17 @@ a.right::after {
         display: none;
     }
 
-    .wrapper1050, .wrapper {
-        width: inherit;
-    }
+    /*.wrapper1050, .wrapper {*/
+    /*    width: inherit;*/
+    /*}*/
 
-    .wrapper1050{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
+    /*.wrapper1050{*/
+    /*    margin-left: 40px;*/
+    /*    margin-right: 40px;*/
+    /*}*/
 
     .block-about {
         padding: 0;
-        display: flex;
     }
 
     .decor {
@@ -751,7 +760,6 @@ a.right::after {
 
     .block-15 {
         flex-direction: column;
-        align-items: center;
     }
 
     .big {
@@ -768,12 +776,13 @@ a.right::after {
     }
 
     .block-guarantee {
+        display: flex;
         justify-content: flex-end;
     }
 
     .number5 {
         top: 50px;
-        left: 200px;
+        left: 100px;
     }
     .block-slider h1 {
         margin-left: 0;
@@ -829,12 +838,8 @@ a.right::after {
         margin-bottom: 640px;
     }
 
-    .size500 {
-        width: inherit;
-    }
-
     .number5 {
-        left: 100px;
+        left: 0;
     }
 
     .dealer .border {
@@ -851,7 +856,7 @@ a.right::after {
 
 @media (max-width: 800px) {
     .number5 {
-        left: 40px;
+        width: 40%;
     }
     .guarantee {
         width: 260px;
@@ -903,14 +908,11 @@ a.right::after {
     .leader-plus {
         margin-bottom: 80px;
     }
-}
 
-@media (max-width: 700px) {
-      .number5 {
-          width: 42%;
-      }
-    .decor, .door {
-        /*width: 43%;*/
+    .big {
+        width: 400px;
+        font-size: 60px;
+        line-height: 60px;
     }
 }
 
@@ -959,13 +961,13 @@ a.right::after {
         margin-bottom: 49px;
     }
 
-    .width330, .width500, .wide_range, .guarantee, .slider, .content, .slider-wrapper, .leader-plus .slider-wrapper, .leader-plus .slider {
-        width: inherit;
-    }
+    /*.width330, .width500, .wide_range, .guarantee, .slider, .content, .slider-wrapper, .leader-plus .slider-wrapper, .leader-plus .slider {*/
+    /*    width: inherit;*/
+    /*}*/
 
     .block-guarantee {
-        margin-left: 40px;
         margin-bottom: 57px;
+        justify-content: center;
     }
 
     .guarantee {
@@ -1039,5 +1041,10 @@ a.right::after {
     .footer-piece {
         flex-direction: column;
     }
+
+    .decor, .door{
+        width: 40%;
+    }
+
 
 }
