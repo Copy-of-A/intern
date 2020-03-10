@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraLight.eot');
+    src: local('TT Travels ExtraLight'), local('TTTravels-ExtraLight'),
+    url('../fonts/TTTravels-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ExtraLight.woff') format('woff'),
+    url('../fonts/TTTravels-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Light.eot');
+    src: local('TT Travels Light'), local('TTTravels-Light'),
+    url('../fonts/TTTravels-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Light.woff') format('woff'),
+    url('../fonts/TTTravels-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Regular.eot');
+    src: local('TT Travels Regular'), local('TTTravels-Regular'),
+    url('../fonts/TTTravels-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Regular.woff') format('woff'),
+    url('../fonts/TTTravels-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Medium.eot');
+    src: local('TT Travels Medium'), local('TTTravels-Medium'),
+    url('../fonts/TTTravels-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Medium.woff') format('woff'),
+    url('../fonts/TTTravels-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-DemiBold.eot');
+    src: local('TT Travels DemiBold'), local('TTTravels-DemiBold'),
+    url('../fonts/TTTravels-DemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-DemiBold.woff') format('woff'),
+    url('../fonts/TTTravels-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Bold.eot');
+    src: local('TT Travels Bold'), local('TTTravels-Bold'),
+    url('../fonts/TTTravels-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Bold.woff') format('woff'),
+    url('../fonts/TTTravels-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-ExtraBold.eot');
+    src: local('TT Travels ExtraBold'), local('TTTravels-ExtraBold'),
+    url('../fonts/TTTravels-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-ExtraBold.woff') format('woff'),
+    url('../fonts/TTTravels-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TTTravels-Black.eot');
+    src: local('TT Travels Black'), local('TTTravels-Black'),
+    url('../fonts/TTTravels-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTTravels-Black.woff') format('woff'),
+    url('../fonts/TTTravels-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: "TT Travels", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 72px;
+    color: #273437;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 43px;
+    color: #273437;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 26px;
+    color: #273437;
+}
+
+p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #344549;
+}
