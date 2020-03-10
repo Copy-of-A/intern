@@ -94,22 +94,35 @@ h1 {
     font-size: 60px;
     line-height: 72px;
     color: #273437;
+    margin-bottom: 100px;
+    margin-top: 150px;
 }
 
 h2 {
     font-size: 36px;
     line-height: 43px;
     color: #273437;
+    margin-bottom: 25px;
 }
 
 h3 {
     font-size: 22px;
     line-height: 26px;
     color: #273437;
+    margin-bottom: 18px;
 }
 
 p {
     font-size: 18px;
     line-height: 26px;
     color: #344549;
+}
+
+.wrapper {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+}
+
+.with-bg {
+    background: #AFC9CE;
 }
