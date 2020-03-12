@@ -88,6 +88,8 @@
 
 body {
     font-family: "TT Travels", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 h1 {
@@ -116,6 +118,12 @@ p {
     font-size: 18px;
     line-height: 26px;
     color: #344549;
+    margin: 0;
+}
+
+.page-wrapper {
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -123,6 +131,148 @@ p {
     margin: 0 auto;
 }
 
+.relative-wrapper {
+    position: relative;
+}
+
 .with-bg {
     background: #AFC9CE;
+}
+
+header {
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 60px 252px;
+    font-weight: bold;
+}
+
+.tel {
+    font-size: 10px;
+}
+
+nav {
+    font-size: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+nav a {
+    margin-right: 25px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 51px;
+}
+
+.underlined {
+    border-bottom: solid 3px #FBE880;
+    padding-bottom: 4px;
+}
+
+.with-burger {
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    margin-right: 56px;
+    margin-top: -30px;
+}
+
+.burger-layer:first-child {
+    margin-bottom: 13px;
+}
+
+.burger-patty, .burger-shadow {
+    width: 56px;
+    height: 14px;
+    border: 3px solid #273437;
+}
+
+.burger-patty {
+    background: #F8FBFB;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
+
+.burger-shadow {
+    background: #273437;
+    z-index: -5;
+}
+
+.service-section {
+    margin-bottom: 114px;
+}
+
+.service-text {
+    margin-top: 60px;
+    margin-left: 180px;
+}
+
+.main-block {
+    padding-top: 46px;
+    padding-left: 40px;
+    padding-right: 106px;
+    background: #F8FBFB;
+}
+
+.service-block {
+    width: 806px;
+    height: 208px;
+    border: 3px solid #273437;
+    box-sizing: border-box;
+}
+
+.border-background {
+    position: absolute;
+    left: -12px;
+    top: -15px;
+}
+
+.border-blue {
+    background: #AFC9CE;
+    z-index: -1;
+}
+
+.block-behind {
+    background: #F8FBFB;
+    position: absolute;
+    top: 30px;
+    left: -33px;
+    z-index: -2;
+}
+
+.block-behind > div {
+    background: #F8FBFB;
+}
+
+.border-yellow {
+    background: #FBE880;
+    z-index: -5;
+}
+
+.down {
+    position: absolute;
+    top: 343px;
+    left: 0;
+    background-image: url("../images/down.svg");
+    background-repeat: no-repeat no-repeat;
+    width: 31px;
+    height: 41px;
 }
