@@ -86,7 +86,7 @@
     font-style: normal;
 }
 
-body {
+.page-wrapper {
     font-family: "TT Travels", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -96,8 +96,10 @@ h1 {
     font-size: 60px;
     line-height: 72px;
     color: #273437;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     margin-top: 150px;
+
+    /*width: 70%;*/
 }
 
 h2 {
@@ -105,6 +107,7 @@ h2 {
     line-height: 43px;
     color: #273437;
     margin-bottom: 25px;
+    /*max-width: 1200px;*/
 }
 
 h3 {
@@ -121,14 +124,12 @@ p {
     margin: 0;
 }
 
-.page-wrapper {
-    width: 1440px;
-    margin: 0 auto;
-}
-
 .wrapper {
     width: calc(100% - 120px);
     margin: 0 auto;
+    min-width: 320px;
+    max-width: 1280px;
+    /*max-width: 1440px;*/
 }
 
 .relative-wrapper {
@@ -191,6 +192,9 @@ nav a:last-child {
 
 .burger {
     margin-right: 56px;
+}
+
+.service-section .burger {
     margin-top: -30px;
 }
 
@@ -275,4 +279,8 @@ nav a:last-child {
     background-repeat: no-repeat no-repeat;
     width: 31px;
     height: 41px;
+}
+
+.text-yellow {
+    color: #FBE880;;
 }
