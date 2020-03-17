@@ -98,8 +98,6 @@ h1 {
     color: #273437;
     margin-bottom: 150px;
     margin-top: 150px;
-
-    /*width: 70%;*/
 }
 
 h2 {
@@ -107,7 +105,6 @@ h2 {
     line-height: 43px;
     color: #273437;
     margin-bottom: 25px;
-    /*max-width: 1200px;*/
 }
 
 h3 {
@@ -157,6 +154,33 @@ header {
 
 nav {
     font-size: 10px;
+}
+
+.nav-button {
+    display: none;
+    position: relative;
+}
+
+.square {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+}
+
+.square:last-of-type {
+    margin-right: 0;
+}
+
+.nav-shadow {
+    position: absolute;
+    display: flex;
+    z-index: -2;
+    top: -2px;
+    left: -2px;
+}
+
+.nav-shadow div {
+    background: #273437;
 }
 
 a {
@@ -220,33 +244,122 @@ nav a:last-child {
     z-index: -5;
 }
 
+.image-sofa {
+    position: absolute;
+    top: -35px;
+    right: 161px;
+}
+
+.image-dumbbell {
+    position: absolute;
+    top: 188px;
+    right: 54px;
+}
+
 .service-section {
     margin-bottom: 114px;
 }
 
 .service-text {
     margin-top: 60px;
-    margin-left: 180px;
+    margin-left: 166px;
 }
 
-.main-block {
-    padding-top: 46px;
-    padding-left: 40px;
-    padding-right: 106px;
+.rectangle-block {
     background: #F8FBFB;
-}
-
-.service-block {
-    width: 806px;
-    height: 208px;
     border: 3px solid #273437;
     box-sizing: border-box;
 }
 
-.border-background {
+.service-section .rectangle-block {
+    padding: 46px 106px 32px 40px;
+}
+
+
+@media (min-width: 980px) {
+    .service-section .rectangle-block {
+        width: 806px;
+        height: 208px;
+    }
+}
+
+@media (min-width: 1480px) {
+    .rectangle-block-wide {
+        width: 660px;
+        height: 490px;
+    }
+
+    .rectangle-block-square {
+        width: 569px;
+        height: 492px;
+    }
+
+    .advantages_line1 {
+        margin-bottom: 182px;
+    }
+
+    .advantages_line1 .absolute-wrapper {
+        position: absolute;
+        top: -55px;
+        left: 620px;
+    }
+
+    .advantages_line2 .absolute-wrapper {
+        position: absolute;
+        top: -77px;
+        left: 529px;
+    }
+}
+
+.advantages_4 img{
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.advantages_line1 .rectangle-block-wide, .advantages_line2 .rectangle-block-square {
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.advantages_line1 .rectangle-block-square {
+    padding-left: 59px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.advantages_line2 .rectangle-block-wide {
+    padding-left: 81px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.advantages_line1 > div:first-of-type, .advantages_line2 > div:first-of-type {
+    z-index: 20;
+}
+
+.advantages_line1 .border-blue, .advantages_line2 .border-yellow {
+    z-index: -20;
+}
+
+.advantages_line2 .border-blue, .advantages_line1 .border-yellow {
+    z-index: -10;
+}
+
+.advantages_line1 .absolute-wrapper, .advantages_line2 .absolute-wrapper  {
+    padding: 0;
+}
+
+.border-background-top {
     position: absolute;
     left: -12px;
     top: -15px;
+}
+
+.border-background-bottom {
+    position: absolute;
+    left: -12px;
+    top: 15px;
 }
 
 .border-blue {
@@ -268,7 +381,7 @@ nav a:last-child {
 
 .border-yellow {
     background: #FBE880;
-    z-index: -5;
+    z-index: -1;
 }
 
 .down {
@@ -283,4 +396,54 @@ nav a:last-child {
 
 .text-yellow {
     color: #FBE880;;
+}
+
+.mar-section {
+    margin-top: 196px;
+    height: 296px;
+    background: #FBE880;
+    border-top: 3px solid #273437;
+    border-bottom: 3px solid #273437;
+    box-sizing: border-box;
+}
+
+.bare-heading div {
+    width:100%;
+    height: 1px;
+}
+.wrapper-118 {
+    margin-left: 118px;
+}
+
+
+@media (max-width: 1479px) {
+    .advantages_4 .rectangle-block {
+        margin-bottom: 73px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .image-sofa, .image-dumbbell, .burger, .down {
+        display: none;
+    }
+    .wrapper-118 {
+        margin-left: 0;
+    }
+
+    .service-text {
+        margin-left: 46px;
+    }
+    .advantages_4 {
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 1400px) {
+    nav a {
+        display: none;
+    }
+
+    .nav-button {
+        display: flex;
+    }
 }
