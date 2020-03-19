@@ -96,7 +96,7 @@ h1 {
     font-size: 60px;
     line-height: 72px;
     color: #273437;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     margin-top: 150px;
 }
 
@@ -133,8 +133,29 @@ p {
     position: relative;
 }
 
-.with-bg {
+.with-bg-blue {
     background: #AFC9CE;
+}
+
+.with-bg-black {
+    background: #273437;
+}
+
+.with-bg-black .burger-patty{
+    background: #FBE880;
+}
+
+.with-bg-black .burger-shadow {
+    background: transparent;
+    border-color: #FBE880;;
+}
+
+.with-bg-black h1 {
+    color: #F8FBFB;
+}
+
+.with-bg-black .with-burger {
+    align-items: baseline;
 }
 
 header {
@@ -415,6 +436,120 @@ nav a:last-child {
     margin-left: 118px;
 }
 
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.placeholder, input, textarea {
+    font-size: 22px;
+    line-height: 26px;
+    background: transparent;
+    color: #F8FBFB;
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    margin: 12px 0;
+    transition: all 0.25s ease;
+}
+
+input, textarea {
+    width: 100%;
+    height: 22px;
+    border: 0;
+    margin: 12px 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.input-wrapper {
+    width: 100%;
+    margin-bottom: 90px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.input-wrapper.focus:before {
+    opacity: 0;
+}
+
+.input-wrapper.focus:after{
+     opacity:1;
+}
+
+.input-wrapper:before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #C1D6DA;
+}
+
+.half-left {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+}
+
+.half-right {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+}
+
+.form .input-wrapper:last-of-type {
+    margin-top: 60px;
+}
+
+.button {
+    width: 490px;
+    height: 60px;
+    background: #FBE880;
+    border: 3px solid #FBE880;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.7em;
+    text-transform: uppercase;
+    color: #273437;
+    font-weight: bold;
+}
+
+.button input, .checkbox input {
+    display: none;
+}
+
+.checkbox input:checked + span {
+    background: #C1D6DA;
+}
+
+.checkbox span {
+    width: 34px;
+    height: 34px;
+    border: 3px solid #C1D6DA;
+    box-sizing: border-box;
+    margin-right: 19px;
+    margin-left: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: background 0.2s ease;
+}
+
+.checkbox i {
+    font-size: 18px;
+    line-height: 22px;
+    color: #F8FBFB;
+}
 
 @media (max-width: 1479px) {
     .advantages_4 .rectangle-block {
