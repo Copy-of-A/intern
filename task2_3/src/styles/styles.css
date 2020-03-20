@@ -124,7 +124,7 @@ p {
 .wrapper {
     width: calc(100% - 120px);
     margin: 0 auto;
-    min-width: 320px;
+    min-width: 280px;
     max-width: 1280px;
     /*max-width: 1440px;*/
 }
@@ -139,6 +139,7 @@ p {
 
 .with-bg-black {
     background: #273437;
+    padding-bottom: 145px;
 }
 
 .with-bg-black .burger-patty{
@@ -158,12 +159,15 @@ p {
     align-items: baseline;
 }
 
+.flex-btw {
+    display: flex;
+    justify-content: space-between;
+}
+
 header {
     line-height: 12px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     margin: 40px 60px 252px;
     font-weight: bold;
@@ -173,7 +177,7 @@ header {
     font-size: 10px;
 }
 
-nav {
+header nav {
     font-size: 10px;
 }
 
@@ -208,12 +212,12 @@ a {
     cursor: pointer;
 }
 
-nav a {
+header nav a {
     margin-right: 25px;
 }
 
 nav a:last-child {
-    margin-right: 0;
+    margin: 0;
 }
 
 .logo {
@@ -228,6 +232,10 @@ nav a:last-child {
 .underlined {
     border-bottom: solid 3px #FBE880;
     padding-bottom: 4px;
+}
+
+.underlined:hover {
+    color: #FBE880;
 }
 
 .with-burger {
@@ -523,6 +531,10 @@ input, textarea {
     text-transform: uppercase;
     color: #273437;
     font-weight: bold;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 22px;
+    cursor: pointer;
 }
 
 .button input, .checkbox input {
@@ -545,10 +557,139 @@ input, textarea {
     transition: background 0.2s ease;
 }
 
+.checkbox {
+    margin-top: 14px;
+}
+
 .checkbox i {
     font-size: 18px;
     line-height: 22px;
     color: #F8FBFB;
+}
+
+.arrow-hover {
+    letter-spacing: 0;
+    line-height: 0;
+    font-size: 0;
+    display: none;
+}
+
+.button:hover .arrow-hover {
+    display: block;
+}
+
+footer {
+    margin-top: 90px !important;
+    margin-bottom: 60px !important;
+}
+
+footer nav{
+    margin-bottom: 107px;
+}
+
+
+footer > span {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #273437;
+    display: block;
+    margin-bottom: 13px;
+}
+
+footer .input-wrapper .placeholder, footer input {
+    font-size: 16px;
+    line-height: 23px;
+    color: #273437;
+}
+
+footer .input-wrapper:before {
+    background-color: #273437;;
+}
+
+footer form {
+    margin-top: 13px;
+    display: inline;
+    margin-right: 80px;
+    position: relative;
+}
+
+footer .input-wrapper, footer .half-left {
+    margin: 0;
+}
+
+footer .button {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    position: absolute;
+    width: 54px;
+    height: 20px;
+    top: 30%;
+    right: 16px;
+}
+
+.social-net {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #FBE880;
+    display: inline-flex;
+    margin-bottom: 137px;
+}
+
+.social-net div {
+    width: 44px;
+    height: 44px;
+    background: #273437;
+    border-radius: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-net a {
+    margin-right: 16px;
+}
+
+.collar {
+    margin-right: 6px
+}
+
+.nav-left {
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #273437;
+    font-weight: bold;
+}
+
+.nav-left a {
+    margin-right: 40px;
+}
+
+.nav-right a {
+    margin-right: 20px;
+}
+
+.nav-right {
+    align-items: center;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.confidential-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.confidential-block span {
+    margin-right: 22px
 }
 
 @media (max-width: 1479px) {
@@ -571,14 +712,98 @@ input, textarea {
     .advantages_4 {
         margin-left: 12px;
     }
-}
 
-@media (max-width: 1400px) {
-    nav a {
+    header nav a {
         display: none;
     }
 
     .nav-button {
         display: flex;
+    }
+}
+
+@media (max-width: 1300px) {
+    footer nav {
+        flex-direction: column;
+    }
+    .nav-left, .nav-right {
+        justify-content: flex-start !important;
+    }
+
+    .nav-left {
+        margin-bottom: 50px;
+    }
+
+    .social-net {
+        display: flex;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+
+    footer .half-left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .confidential-block {
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav-left, .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-left a, .nav-right a {
+        margin-bottom: 30px;
+    }
+
+    footer nav {
+        margin-bottom: 73px;
+    }
+}
+
+@media (max-width: 640px) {
+    footer {
+        margin-top: 100px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .wrapper {
+        width: calc(100% - 40px);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .footer-bottom span.underlined {
+        display: none;
+    }
+
+    .nav-left, footer > span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .nav-right, footer .input-wrapper .placeholder, footer input, .confidential-block a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .confidential-block span {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+}
+
+@media (max-width: 427px) {
+    .confidential-block span {
+        margin-bottom: 20px;
     }
 }

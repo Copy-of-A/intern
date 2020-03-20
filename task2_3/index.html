@@ -33,7 +33,7 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <header>
+        <header class="flex-btw">
             <div class="logo">
                 <img src="src/images/logo.svg" alt="Логотип">
                 <span class="tel">8(800) 700-06-07</span>
@@ -262,9 +262,14 @@
                         </label>
 
 
-                        <label class="button">
+                        <label class="button flex-btw">
                             <span>Отправить</span>
                             <input type="submit">
+                            <div class="arrow-hover">
+                                <img src="src/images/Vector.svg" alt="">
+                                <img src="src/images/Vector2.svg" alt="">
+                                <img src="src/images/Vector2.svg" alt="">
+                            </div>
                         </label>
 
                         <label class="checkbox not-empty">
@@ -272,14 +277,53 @@
                             <span></span>
                             <i>Согласие на обработку данных</i>
                         </label>
-
-
                     </form>
                 </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="wrapper">
+            <nav class="flex-btw">
+                <div class="nav-left flex-btw">
+                    <a>Заемщикам</a>
+                    <a>О сервисе</a>
+                    <a>Вопросы</a>
+                    <a>Блог</a>
+                    <a>Контакты</a>
+                </div>
+                <div class="nav-right flex-btw">
+                    <a class="underlined">Как получить займ</a>
+                    <a class="underlined">Как погасить займ</a>
+                    <a class="underlined">Правила и документы</a>
+                </div>
+            </nav>
+            <span>Подпишитесь на рассылку</span>
+            <form>
+                <label class="input-wrapper half-left">
+                    <span class="placeholder">Электронная почта</span>
+                    <input type="email" data-required="true">
+                    <label class="button">
+                    <img src="src/images/arrow-btn.svg" alt="">
+                    <input type="submit">
+                </label>
+                </label>
+
+            </form>
+            <div class="social-net">
+                <a><div>вк</div></a>
+                <a><div>фб</div></a>
+                <a><div>ин</div></a>
+            </div>
+            <div class="flex-btw footer-bottom">
+                <div class="confidential-block">
+                    <span>ООО «Автономи»</span>
+                    <a class="underlined">Политика конфиденциальности</a>
+                </div>
+                <div>
+                    <a><img src="src/images/collar.png" alt="" class="collar">
+                    <span class="underlined">Сделано в Red Collar</span></a>
+                </div>
+            </div>
         </footer>
     </div>
 

@@ -26,4 +26,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     myResize();
     // myResize(wrapper_advantages_1);
     // myResize(wrapper_advantages_2);
+
+    const input_wrapper = document.getElementsByClassName('input-wrapper');
+    for(let i=1; i < input_wrapper.length; i++) {
+        const input = input_wrapper[i].getElementsByTagName('input');
+        const span = input_wrapper[i].getElementsByClassName('placeholder');
+
+            input[0].addEventListener('focus', function(event){
+                span[0].style.display = "none";
+            });
+
+
+    }
+
+
 });
