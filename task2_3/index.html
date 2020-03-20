@@ -33,9 +33,9 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <header class="flex-btw">
+        <header class="wrapper flex-btw">
             <div class="logo">
-                <img src="src/images/logo.svg" alt="Логотип">
+                <a><img src="src/images/logo.svg" alt="Логотип"></a>
                 <span class="tel">8(800) 700-06-07</span>
             </div>
             <nav>
@@ -58,8 +58,8 @@
             </nav>
         </header>
         <main>
-            <section>
-                <div class="wrapper service-section relative-wrapper">
+            <section class="service-section">
+                <div class="wrapper relative-wrapper">
                     <img class="image-sofa" src="src/images/sofa.svg">
                     <img class="image-dumbbell" src="src/images/dumbbell.svg">
                     <div class="with-burger">
@@ -73,7 +73,7 @@
                                 <div class="burger-shadow"></div>
                             </div>
                         </a>
-                        <img src="src/images/service.svg" alt="">
+                        <img class="service-img" src="src/images/service.svg" alt="">
                     </div>
 
                     <div class="relative-wrapper service-text wrapper-js">
@@ -261,22 +261,23 @@
                             <input type="text" data-required="true">
                         </label>
 
+                        <div class="form-bottom">
+                            <label class="button arrow-hover flex-btw">
+                                <span>Отправить</span>
+                                <input type="submit">
+                                <div class="arrow-hover-block">
+                                    <img src="src/images/Vector.svg" alt="">
+                                    <img src="src/images/Vector2.svg" alt="">
+                                    <img src="src/images/Vector2.svg" alt="">
+                                </div>
+                            </label>
 
-                        <label class="button flex-btw">
-                            <span>Отправить</span>
-                            <input type="submit">
-                            <div class="arrow-hover">
-                                <img src="src/images/Vector.svg" alt="">
-                                <img src="src/images/Vector2.svg" alt="">
-                                <img src="src/images/Vector2.svg" alt="">
-                            </div>
-                        </label>
-
-                        <label class="checkbox not-empty">
-                            <input type="checkbox" data-required="true">
-                            <span></span>
-                            <i>Согласие на обработку данных</i>
-                        </label>
+                            <label class="checkbox not-empty">
+                                <input type="checkbox" data-required="true">
+                                <span></span>
+                                <i>Согласие на обработку данных</i>
+                            </label>
+                        </div>
                     </form>
                 </div>
             </section>

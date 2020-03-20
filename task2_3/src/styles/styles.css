@@ -159,6 +159,10 @@ p {
     align-items: baseline;
 }
 
+.with-bg-black .with-burger h1 {
+    margin-bottom: 100px;
+}
+
 .flex-btw {
     display: flex;
     justify-content: space-between;
@@ -169,7 +173,8 @@ header {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     align-items: center;
-    margin: 40px 60px 252px;
+    margin-top: 40px !important;
+    margin-bottom: 252px !important;
     font-weight: bold;
 }
 
@@ -184,6 +189,7 @@ header nav {
 .nav-button {
     display: none;
     position: relative;
+    cursor: pointer;
 }
 
 .square {
@@ -289,6 +295,10 @@ nav a:last-child {
     margin-bottom: 114px;
 }
 
+.with-burger h1 {
+    margin-bottom: 150px;
+}
+
 .service-text {
     margin-top: 60px;
     margin-left: 166px;
@@ -338,6 +348,10 @@ nav a:last-child {
         top: -77px;
         left: 529px;
     }
+}
+
+.advantages_4 {
+    margin-top: 30px;
 }
 
 .advantages_4 img{
@@ -449,6 +463,10 @@ nav a:last-child {
     flex-wrap: wrap;
 }
 
+.form-bottom {
+    display: flex;
+}
+
 .placeholder, input, textarea {
     font-size: 22px;
     line-height: 26px;
@@ -555,6 +573,7 @@ input, textarea {
     display: inline-block;
     vertical-align: middle;
     transition: background 0.2s ease;
+    cursor: pointer;
 }
 
 .checkbox {
@@ -567,16 +586,23 @@ input, textarea {
     color: #F8FBFB;
 }
 
-.arrow-hover {
+.arrow-hover-block {
     letter-spacing: 0;
     line-height: 0;
     font-size: 0;
     display: none;
 }
 
-.button:hover .arrow-hover {
-    display: block;
+.underlined:hover {
+    color: #FBE880;
 }
+
+@media (min-width: 641px) {
+    .arrow-hover:hover .arrow-hover-block {
+        display: block;
+    }
+}
+
 
 footer {
     margin-top: 90px !important;
@@ -745,6 +771,22 @@ footer .button {
     }
 }
 
+@media (max-width: 1100px) {
+    .form-bottom {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .checkbox {
+        margin-top: 0;
+        margin-bottom: 38px;
+    }
+
+    .checkbox span{
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 850px) {
     .footer-bottom {
         flex-direction: column;
@@ -752,6 +794,15 @@ footer .button {
     }
     .confidential-block {
         margin-bottom: 55px;
+    }
+    .half-left, .half-right {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .service-img {
+        width: 80%;
     }
 }
 
@@ -770,6 +821,10 @@ footer .button {
 }
 
 @media (max-width: 640px) {
+    header {
+        margin-top: 30px !important;
+        margin-bottom: 105px !important;
+    }
     footer {
         margin-top: 100px !important;
         margin-bottom: 50px !important;
@@ -781,7 +836,7 @@ footer .button {
         margin-left: 20px;
     }
 
-    .footer-bottom span.underlined {
+    .footer-bottom span.underlined, .tel {
         display: none;
     }
 
@@ -790,7 +845,7 @@ footer .button {
         line-height: 14px;
     }
 
-    .nav-right, footer .input-wrapper .placeholder, footer input, .confidential-block a {
+    p, .nav-right, footer .input-wrapper .placeholder, footer input, .confidential-block a {
         font-size: 14px;
         line-height: 20px;
     }
@@ -798,6 +853,90 @@ footer .button {
     .confidential-block span {
         font-size: 16px;
         line-height: 23px;
+    }
+
+    .with-burger h1{
+        margin-bottom: 50px;
+    }
+
+    .service-section + section.with-bg-blue h1 {
+        margin-bottom: 100px;
+    }
+
+    .advantages_4 {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .placeholder, input, textarea {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .button {
+        width: 212px;
+        height: 43px;
+        font-size: 11px;
+        line-height: 13px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .service-text {
+        margin-left: 0;
+    }
+
+    .service-section .rectangle-block {
+        padding: 30px 18px 41px 25px;
+    }
+
+    .checkbox span {
+        width: 30px;
+        height: 30px;
+    }
+    .checkbox i {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .input-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .form .input-wrapper:last-of-type {
+        margin-top: 0;
+    }
+
+    .with-bg-black {
+        padding-bottom: 100px;
+    }
+
+    .mar-section {
+        margin-top: 116px;
+        height: 128px;
+    }
+
+    .advantages_4 .rectangle-block {
+        padding-left: 25px;
+        padding-right: 17px;
+    }
+
+    .advantages_4 img {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .rectangle-block img {
+        width: 45px;
     }
 
 }
