@@ -503,7 +503,7 @@ nav a:last-child {
 .content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .form {
@@ -957,7 +957,10 @@ footer .button {
         display: flex;
         justify-content: flex-start;
         padding-left: 35px;
+        min-width: fit-content;
+        padding-right: 35px;
     }
+
     .button-more > div {
         height: 45px;
         width: 30px;

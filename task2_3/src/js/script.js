@@ -37,33 +37,29 @@ function hidePlaceholder() {
     }
 }
 
+function resizeShadows() {
+    let wrappers = document.getElementsByClassName('wrapper-js');
+    for(let i = 0; i < wrappers.length; i++) {
+        let mainElement = wrappers[i].getElementsByClassName('main-block-js');
+        let elements = wrappers[i].getElementsByClassName('rectangle-block');
+
+        let my_width = mainElement[0].clientWidth;
+        let my_height = mainElement[0].clientHeight;
+
+        for(let j = 0; j < elements.length; j++) {
+            if (elements[j].classList.contains('main-block-js')) continue;
+            elements[j].style.width = my_width + "px";
+            elements[j].style.height = my_height + "px";
+        }
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
     expand();
     hidePlaceholder();
-
-    function myResize() {
-        // const wrapper = document.getElementsByClassName('wrapper-js');
-        // let elements = wrapper[0].querySelectorAll('main-block-js');
-        //
-        // let my_width = elements[0].clientWidth;
-        // let my_height = elements[0].clientHeight;
-        //
-        // for(let i=1; i < elements.length; i++) {
-        //     elements[i].style.width = my_width + "px";
-        //     elements[i].style.height = my_height + "px";
-        // }
-    }
-
-    // const wrapper_service = document.getElementsByClassName('wrapper-text');
-    // const wrapper_advantages_1 = document.getElementsByClassName('advantages_line1');
-    // const wrapper_advantages_2 = document.getElementsByClassName('advantages_line2');
+    resizeShadows();
 
     window.addEventListener('resize', function(event){
-        myResize();
-        // myResize(wrapper_advantages_1);
-        // myResize(wrapper_advantages_2);
+        resizeShadows();
     });
-    myResize();
-    // myResize(wrapper_advantages_1);
-    // myResize(wrapper_advantages_2);
 });
