@@ -25,18 +25,21 @@ function expand() {
 
 function hidePlaceholder() {
     const input_wrapper = document.getElementsByClassName('input-wrapper');
-    for(let i=1; i < input_wrapper.length; i++) {
+    for(let i = 0; i < input_wrapper.length; i++) {
         let input = input_wrapper[i].querySelector('input');
         let span = input_wrapper[i].querySelector('.placeholder');
-        input.addEventListener('focus', function(event){
-            console.log("focus");
+        input.addEventListener('focusin', function(event){
             span.style.display = "none";
+        });
+        input.addEventListener('focusout', function(event){
+            if (input.value.length === 0) span.style.display = "block";
         });
     }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
     expand();
+    hidePlaceholder();
 
     function myResize() {
         // const wrapper = document.getElementsByClassName('wrapper-js');
