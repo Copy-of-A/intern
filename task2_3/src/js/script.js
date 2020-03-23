@@ -1,17 +1,54 @@
 "use strict";
 
+function expand() {
+    const coll = document.getElementsByClassName('collapsible-js');
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function () {
+            let span = this.querySelector("span");
+            let content = this.previousElementSibling;
+            const bg = this.querySelector("div");
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                span.innerHTML = `<span class="none-mob">Показать </span>ещё`;
+                bg.style.transform = `rotate(0deg)`;
+                this.style.justifyContent = 'flex-between';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                span.innerText = "свернуть";
+                bg.style.transform = `rotate(180deg)`;
+                this.style.justifyContent = 'space-around';
+            }
+        })
+    }
+}
+
+function hidePlaceholder() {
+    const input_wrapper = document.getElementsByClassName('input-wrapper');
+    for(let i=1; i < input_wrapper.length; i++) {
+        let input = input_wrapper[i].querySelector('input');
+        let span = input_wrapper[i].querySelector('.placeholder');
+        input.addEventListener('focus', function(event){
+            console.log("focus");
+            span.style.display = "none";
+        });
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
+    expand();
+
     function myResize() {
-        const wrapper = document.getElementsByClassName('wrapper-js');
-        let elements = wrapper[0].querySelectorAll('main-block-js');
-
-        let my_width = elements[0].clientWidth;
-        let my_height = elements[0].clientHeight;
-
-        for(let i=1; i < elements.length; i++) {
-            elements[i].style.width = my_width + "px";
-            elements[i].style.height = my_height + "px";
-        }
+        // const wrapper = document.getElementsByClassName('wrapper-js');
+        // let elements = wrapper[0].querySelectorAll('main-block-js');
+        //
+        // let my_width = elements[0].clientWidth;
+        // let my_height = elements[0].clientHeight;
+        //
+        // for(let i=1; i < elements.length; i++) {
+        //     elements[i].style.width = my_width + "px";
+        //     elements[i].style.height = my_height + "px";
+        // }
     }
 
     // const wrapper_service = document.getElementsByClassName('wrapper-text');
@@ -26,18 +63,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     myResize();
     // myResize(wrapper_advantages_1);
     // myResize(wrapper_advantages_2);
-
-    const input_wrapper = document.getElementsByClassName('input-wrapper');
-    for(let i=1; i < input_wrapper.length; i++) {
-        const input = input_wrapper[i].getElementsByTagName('input');
-        const span = input_wrapper[i].getElementsByClassName('placeholder');
-
-            input[0].addEventListener('focus', function(event){
-                span[0].style.display = "none";
-            });
-
-
-    }
-
-
 });

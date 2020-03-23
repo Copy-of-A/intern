@@ -90,6 +90,7 @@
     font-family: "TT Travels", sans-serif;
     font-style: normal;
     font-weight: normal;
+    overflow: hidden;
 }
 
 h1 {
@@ -464,10 +465,6 @@ nav a:last-child {
     width: 100%;
 }
 
-.vacancies .arrow-hover:nth-child(5), .vacancies .arrow-hover:nth-child(6) {
-    margin-bottom: 0;
-}
-
 .vacancy {
     display: inline-flex;
     height: 100px;
@@ -479,21 +476,34 @@ nav a:last-child {
     line-height: 26px;
     color: #273437;
     font-weight: bold;
-    align-items: center;
 }
 
 .vacancy a {
     width: 100%;
     margin-left: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .button-more {
-    margin: 141px auto 180px;
+    margin: 81px auto 180px;
     width: 422px !important;
+    padding-right: 50px;
 }
 
-.button-more img {
-    margin-right: 49px;
+.button-more > div {
+    width: 30px;
+    height: 60px;
+    background: #FBE880 url("../images/more.svg") no-repeat !important;
+    background-position-y: 50% !important;
+    background-position-x: 90% !important;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .form {
@@ -578,7 +588,7 @@ input, textarea {
 .button {
     width: 490px;
     height: 60px;
-    background: #FBE880;
+    background-color: #FBE880;
     border: 3px solid #FBE880;
     box-sizing: border-box;
     font-size: 16px;
@@ -635,7 +645,7 @@ input, textarea {
     color: #FBE880;
 }
 
-@media (min-width: 641px) {
+@media screen and (min-width: 1150px) {
     .arrow-hover:hover .arrow-hover-block {
         display: flex;
     }
@@ -784,6 +794,10 @@ footer .button {
     .nav-button {
         display: flex;
     }
+
+    .flex-center {
+        display: flex;flex-direction: column;align-items: center;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -874,7 +888,7 @@ footer .button {
         margin-left: 20px;
     }
 
-    .footer-bottom span.underlined, .tel {
+    .footer-bottom span.underlined, .tel, .none-mob {
         display: none;
     }
 
@@ -915,7 +929,14 @@ footer .button {
         font-size: 22px;
         line-height: 26px;
     }
-    .placeholder, input, textarea {
+
+    .vacancy {
+        margin-bottom: 30px;
+        min-height: 70px;
+        max-height: max-content;
+    }
+
+    .placeholder, input, textarea, .vacancy a {
         font-size: 18px;
         line-height: 22px;
     }
@@ -927,6 +948,22 @@ footer .button {
         line-height: 13px;
         justify-content: center;
         padding: 0;
+    }
+
+    .button-more {
+        width: 148px !important;
+        height: 45px !important;
+        margin: 45px auto 120px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 35px;
+    }
+    .button-more > div {
+        height: 45px;
+        width: 30px;
+        background: #FBE880 url("../images/more_mob.svg") no-repeat !important;
+        background-position-y: 50% !important;
+        background-position-x: 75% !important;
     }
 
     .service-text {
