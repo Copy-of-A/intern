@@ -178,25 +178,16 @@ function makeBurger(){
     if (!button || !nav) return;
     let active = false;
 
-    let menu = nav.querySelector('.nav-menu');
-    let div = document.createElement('div');
-    let tel = document.createElement('span');
-    tel.innerText = "+7 (800) 700-06-07";
-    div.classList.add('tel-menu');
-    div.appendChild(tel);
-
     button.addEventListener("click", function () {
         if (!active) {
             nav.classList.add("active");
             document.documentElement.style.overflowY = 'hidden';
             active = true;
-            menu.appendChild(div);
         }
         else{
             nav.classList.remove("active");
             document.documentElement.style.overflowY = 'visible';
             active = false;
-            menu.removeChild(div)
         }
     });
 }
