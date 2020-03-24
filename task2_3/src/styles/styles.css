@@ -477,6 +477,27 @@ nav a:last-child {
     border-top: 3px solid #273437;
     border-bottom: 3px solid #273437;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.mar {
+    display: flex;
+}
+
+.mar img{
+    -webkit-animation: scroll 20s infinite linear;
+    -moz-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
 }
 
 .bare-heading div {
