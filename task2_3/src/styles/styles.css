@@ -508,6 +508,50 @@ nav a:last-child {
     margin-left: 118px;
 }
 
+.team-section {
+    padding-bottom: 150px;
+}
+
+.slider-wrapper {
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    margin-bottom: 78px;
+    /*align-items: center;*/
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 270px;
+}
+
+.slide-name {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.slide-img img {
+    border-radius: 50%;
+}
+
+.slider-nav {
+    display: flex;
+}
+
+.slider-button {
+    width: 60px;
+    height: 60px;
+    background: #FBE880;
+    border: 3px solid #273437;
+    box-sizing: border-box;
+    margin-right: 19px;
+}
+
 .vacancies {
     display: flex;
     flex-wrap: wrap;
