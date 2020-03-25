@@ -86,6 +86,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium'), local('Muller-Medium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff'),
+    url('../fonts/MullerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .page-wrapper {
     font-family: "TT Travels", sans-serif;
     font-style: normal;
@@ -223,7 +233,7 @@ header nav {
     margin-right: 10px;
 }
 
-.square:last-of-type {
+.square:last-of-type, .slider-button:nth-child(4) {
     margin-right: 0;
 }
 
@@ -513,19 +523,23 @@ nav a:last-child {
 }
 
 .slider-wrapper {
+
 }
 
 .slider {
     display: flex;
     overflow: hidden;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 78px;
-    /*align-items: center;*/
 }
 
 .slide {
     flex-shrink: 0;
     width: 270px;
+}
+
+.slide-info {
+    margin-top: 40px;
 }
 
 .slide-name {
@@ -535,12 +549,19 @@ nav a:last-child {
     margin-bottom: 18px;
 }
 
+.slide-job {
+    margin-top: 1em;
+}
+
 .slide-img img {
     border-radius: 50%;
 }
 
 .slider-nav {
     display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .slider-button {
@@ -550,6 +571,53 @@ nav a:last-child {
     border: 3px solid #273437;
     box-sizing: border-box;
     margin-right: 19px;
+    font-family: Muller, serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+    color: #273437;
+    text-align: center;
+    /*align-items: center;*/
+}
+
+.slider-arrow-right, .slider-arrow-left {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.slider .slider-arrow-right, .slider .slider-arrow-left {
+    margin-top: 120px;
+}
+
+.slider-nav .slider-arrow-right {
+    margin-left: 30px;
+}
+
+.slider-nav .slider-arrow-left {
+    margin-right: 30px;
+}
+
+.slider-arrow-left div {
+    background: url("../images/left-arrow-black.svg") no-repeat;
+    height: 100%;
+    width: 50%;
+}
+
+.slider-arrow-right div {
+    background: url("../images/right-arrow-black.svg") no-repeat;
+    height: 100%;
+    width: 50%;
+}
+
+.slider-arrow-left:hover div {
+    background: url("../images/left-arrow-yellow.svg") no-repeat;
+}
+
+.slider-arrow-right:hover div {
+    background: url("../images/right-arrow-yellow.svg") no-repeat;
 }
 
 .vacancies {
@@ -984,6 +1052,10 @@ footer .button {
 
     nav.active .tel-menu {
         display: flex;
+    }
+
+    .slider > .slider-arrow-right, .slider-arrow-left {
+        display: none;
     }
 }
 
