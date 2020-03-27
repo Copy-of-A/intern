@@ -54,16 +54,92 @@ function resizeShadows() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
     expand();
     hidePlaceholder();
     resizeShadows();
     makeBurger();
 
+    slider_func();
+
     window.addEventListener('resize', function(event){
         resizeShadows();
     });
+
+    const next = document.querySelectorAll(".slider-arrow-right");
+    next.forEach((e) => {
+        e.addEventListener('click', () => {
+        })
+    });
+    const prev = document.querySelectorAll(".slider-arrow-left");
+    prev.forEach((e) => {
+        e.addEventListener('click', () => {
+        })
+    });
 });
+
+function slider_func(){
+    const sliders = document.querySelectorAll('.slider');
+
+    for (let i = 0; i < sliders.length; i++) {
+        createSlider(sliders[i]);
+    }
+}
+
+function createSlider(slider) {
+    const slides = slider.querySelectorAll('.slide');
+
+    if (slides.length < 2) return;
+
+    const wrapper = slider.querySelector('.slider-wrapper');
+    const prevButton = slider.querySelectorAll('.slider-arrow-left');
+    const nextButton = slider.querySelectorAll('.slider-arrow-right');
+
+    if (!prevButton && !nextButton) return;
+
+    let width = 0;
+    // let no_numbers = false;
+    // let photo_number = document.getElementById('photo_number');
+    // const photo_amount = document.getElementById('photo_amount');
+    // if (!photo_number || !photo_amount){
+    //     no_numbers = true;
+    // }
+    // else{
+    //     photo_amount.innerText = slides.length.toString();
+    // }
+
+    // function resize() {
+    //     width = slider.scrollWidth;
+    // }
+    // resize();
+    // document.addEventListener('resize', resize);
+
+    let activeSlide = 1;
+    console.log(activeSlide);
+    console.log(slides);
+
+    slides[activeSlide].classList.add('active');
+
+    if (prevButton) prevButton.forEach((e) => {
+        e.addEventListener('click', function () {
+            activeSlide--;
+            if (activeSlide < 0) activeSlide = slides.length - 1;
+            // wrapper.style.transform = `translate3d(-${width * activeSlide}px, 0, 0)`;
+            // photo_number.innerText=(activeSlide+1).toString();
+        })
+    });
+
+    if (nextButton) nextButton.forEach((e) => {
+        e.addEventListener('click', function () {
+            activeSlide++;
+            if (activeSlide > slides.length - 1) activeSlide = 0;
+
+            // wrapper.style.transform = `translate3d(-${width * activeSlide}px, 0, 0)`;
+            // photo_number.innerText = (activeSlide + 1).toString();
+        })
+    })
+}
+
 
 /**
  * События формы

@@ -523,10 +523,6 @@ nav a:last-child {
 }
 
 .slider-wrapper {
-
-}
-
-.slider {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
@@ -588,7 +584,7 @@ nav a:last-child {
     cursor: pointer;
 }
 
-.slider .slider-arrow-right, .slider .slider-arrow-left {
+.slider-wrapper .slider-arrow-right, .slider-wrapper .slider-arrow-left {
     margin-top: 120px;
 }
 
@@ -1054,7 +1050,7 @@ footer .button {
         display: flex;
     }
 
-    .slider > .slider-arrow-right, .slider-arrow-left {
+    .slider-wrapper > .slider-arrow-right, .slider-arrow-left {
         display: none;
     }
 }
